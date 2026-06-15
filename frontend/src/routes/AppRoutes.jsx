@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "../pages/Login";
 import Dashboard from "../pages/Dashboard";
 import SurveyBuilder from "../pages/SurveyBuilder";
-import PublicSurvey from "../pages/PublicSurvey";
+import PublicSurvey from "../pages/publicSurvey";
 import Responses from "../pages/Responses";
 import Register from "../pages/Register";
 function AppRoutes() {
