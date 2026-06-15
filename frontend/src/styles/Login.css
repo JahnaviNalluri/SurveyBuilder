@@ -109,3 +109,59 @@ margin-left: -30%;
 .login-card a:hover {
   text-decoration: underline;
 }
+.password-box{
+  position:relative;
+  width:100%;
+}
+
+.password-box input{
+  width:100%;
+  padding-right:45px;
+  box-sizing:border-box;
+}
+
+.eye-icon{
+  position:absolute;
+  top:50%;
+  right:15px;
+  transform:translateY(-50%);
+  cursor:pointer;
+  font-size:18px;
+  color:black;
+   filter: brightness(0); 
+}
+.password-eye{
+   filter: brightness(0); 
+}
+.password-container{
+
+  position:relative;
+
+  width:100%;
+}
+
+.password-container input{
+
+  width:100%;
+
+  padding-right:45px;
+
+  box-sizing:border-box;
+}
+
+.password-eye{
+
+  position:absolute;
+
+  right:12px;
+
+  top:50%;
+
+  transform:translateY(-50%);
+
+  width:20px;
+
+  height:20px;
+
+  cursor:pointer;
+}

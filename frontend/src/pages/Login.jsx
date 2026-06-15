@@ -41,6 +41,8 @@ function Login() {
       alert("Login failed");
     }
   };
+  const [showPassword, setShowPassword] =
+  useState(false);
 
  return (
   <div className="login-container">
@@ -55,12 +57,49 @@ function Login() {
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+       <div className="password-container">
+
+  <input
+    type={
+      showPassword
+        ? "text"
+        : "password"
+    }
+
+    placeholder="Password"
+
+    value={password}
+
+    onChange={(e) =>
+      setPassword(e.target.value)
+    }
+  />
+
+  <img
+
+    src={
+      showPassword
+
+      ? "https://media.geeksforgeeks.org/wp-content/uploads/20210917145551/eye.png"
+
+      : 
+      "https://media.geeksforgeeks.org/wp-content/uploads/20210917150049/eyeslash.png"
+    }
+
+    alt="eye"
+
+    className="password-eye"
+
+    onClick={() =>
+      setShowPassword(
+        !showPassword
+      )
+    }
+
+  />
+
+</div>
+
 
         <button type="submit">
           Login

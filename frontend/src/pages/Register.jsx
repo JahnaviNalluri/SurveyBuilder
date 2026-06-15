@@ -6,7 +6,8 @@ function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+const [showPassword, setShowPassword] =
+  useState(false);
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {
@@ -27,7 +28,7 @@ function Register() {
         response.data.token
       );
 
-      navigate("/dashboard");
+      navigate("/login");
 
     } catch (error) {
       alert(
@@ -57,12 +58,49 @@ function Register() {
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+         <div className="password-container">
+
+  <input
+    type={
+      showPassword
+        ? "text"
+        : "password"
+    }
+
+    placeholder="Password"
+
+    value={password}
+
+    onChange={(e) =>
+      setPassword(e.target.value)
+    }
+  />
+
+  <img
+
+    src={
+      showPassword
+
+      ? "https://media.geeksforgeeks.org/wp-content/uploads/20210917145551/eye.png"
+
+      : 
+      "https://media.geeksforgeeks.org/wp-content/uploads/20210917150049/eyeslash.png"
+    }
+
+    alt="eye"
+
+    className="password-eye"
+
+    onClick={() =>
+      setShowPassword(
+        !showPassword
+      )
+    }
+
+  />
+
+</div>
+
 
         <button type="submit">
           Register
