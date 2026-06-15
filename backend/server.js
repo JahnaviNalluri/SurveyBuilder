@@ -19,7 +19,13 @@ const app = express();
 
 // Middleware
 app.use(
-  cors()
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://survey-builder-one.vercel.app",
+    ],
+    credentials: true,
+  })
 );
 app.use(express.json());
 
