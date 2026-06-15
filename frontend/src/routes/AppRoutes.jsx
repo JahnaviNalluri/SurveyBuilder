@@ -27,7 +27,10 @@ function AppRoutes() {
           path="/dashboard"
           element={<Dashboard />}
         />
-
+<Route
+  path="/survey/new"
+  element={<SurveyBuilder />}
+/>
         <Route
           path="/survey/:id"
           element={<SurveyBuilder />}

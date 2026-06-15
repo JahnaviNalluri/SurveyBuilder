@@ -100,7 +100,7 @@ const publishSurvey = async (req, res) => {
     res.json({
       message: "Survey published successfully",
       survey,
-      publicUrl: `/survey/${survey._id}`
+      publicUrl: `/public /${survey._id}`
     });
 
   } catch (error) {
