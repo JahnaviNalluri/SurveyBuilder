@@ -1,0 +1,111 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full height */
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Full screen background */
+.login-container {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image:
+    
+    url("https://static.vecteezy.com/system/resources/thumbnails/049/191/640/small_2x/a-well-organized-feedback-form-rests-against-a-blend-of-pastel-colors-inviting-insights-and-opinions-from-users-photo.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Login Card */
+.login-card {
+  width: 100%;
+  max-width: 490px;
+  padding: 40px;
+  border-radius: 20px;
+margin-left: -30%;
+  background: transparent;
+  backdrop-filter: blur(25px);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  text-align: center;
+}
+
+/* Heading */
+.login-card h1 {
+  color: black;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+
+  border: none;
+  border-radius: 10px;
+
+  outline: none;
+  font-size: 16px;
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: pink;
+  color: black;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-card button:hover {
+  background: skyblue;
+  transform: translateY(-2px);
+}
+
+/* Text */
+.login-card p {
+  margin-top: 20px;
+  color: white;
+}
+
+.login-card a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}

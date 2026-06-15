@@ -1,0 +1,93 @@
+/* Full Screen Background */
+.register-container {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/049/191/640/small_2x/a-well-organized-feedback-form-rests-against-a-blend-of-pastel-colors-inviting-insights-and-opinions-from-users-photo.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Register Card */
+.register-card {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 40px;
+  border-radius: 20px;
+margin-left: -35%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  text-align: center;
+}
+
+/* Heading */
+.register-card h1 {
+  color: black;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* Inputs */
+.register-card input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+
+  border: none;
+  border-radius: 10px;
+
+  outline: none;
+  font-size: 16px;
+}
+
+/* Button */
+.register-card button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: pink;
+  color: black;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.register-card button:hover {
+  background: skyblue;
+  transform: translateY(-2px);
+}
+
+/* Text */
+.register-card p {
+  margin-top: 20px;
+  color: white;
+}
+
+.register-card a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-card a:hover {
+  text-decoration: underline;
+}
