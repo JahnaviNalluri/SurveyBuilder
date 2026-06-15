@@ -1,11 +1,24 @@
 /* =========================
    Dashboard Container
 ========================= */
-.dashboard {
-  min-height: 100vh;
-  padding: 30px 50px;
-  background: peachpuff;
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: peachpuff;
 }
+
+
+.dashboard {
+  width: 100%;
+      /* At least one full screen */
+  background: #f3d5bc;   /* Your background color */
+  padding: 40px;
+  box-sizing: border-box;
+}
+
 
 /* =========================
    Header
@@ -275,4 +288,28 @@
   .dashboard {
     padding: 20px;
   }
+}
+.dashboard-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.header-buttons{
+  display:flex;
+  gap:12px;
+}
+
+.logout-btn{
+  padding:10px 18px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:600;
+  background-color: red;
+}
+
+.logout-btn:hover{
+  opacity:0.9;
 }

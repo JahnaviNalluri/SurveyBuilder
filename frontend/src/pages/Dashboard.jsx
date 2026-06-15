@@ -64,7 +64,13 @@ function Dashboard() {
       console.log(error);
     }
   };
+const handleLogout = () => {
 
+  localStorage.removeItem("token");
+
+  navigate("/login");
+
+};
   const copyUrl = (surveyId) => {
     const url =
       `${window.location.origin}/public/${surveyId}`;
@@ -78,15 +84,28 @@ function Dashboard() {
     <div className="dashboard">
 
       <div className="dashboard-header">
-        <h1>My Surveys</h1>
 
-        <button
-          className="create-btn"
-          onClick={createSurvey}
-        >
-          + Create Survey
-        </button>
-      </div>
+  <h1>My Surveys</h1>
+
+  <div className="header-buttons">
+
+    <button
+      className="create-btn"
+      onClick={createSurvey}
+    >
+      + Create Survey
+    </button>
+
+    <button
+      className="logout-btn"
+      onClick={handleLogout}
+    >
+      Logout
+    </button>
+
+  </div>
+
+</div>
 
       {surveys.length === 0 && (
         <div className="empty">
