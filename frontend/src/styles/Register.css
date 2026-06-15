@@ -17,19 +17,25 @@
 }
 
 /* Register Card */
-.register-card {
-  width: 100%;
-  max-width: 500px;
+.register-card{
 
-  padding: 40px;
-  border-radius: 20px;
-margin-left: -35%;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
+  width:100%;
 
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  max-width:500px;
 
-  text-align: center;
+  margin:0;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  background:
+  rgba(255,255,255,0.15);
+
+  backdrop-filter:
+  blur(20px);
+
+  text-align:center;
 }
 
 /* Heading */
@@ -90,4 +96,71 @@ margin-left: -35%;
 
 .register-card a:hover {
   text-decoration: underline;
+}
+@media (max-width:768px){
+
+  .dashboard{
+
+    padding:20px;
+  }
+
+  .dashboard-header{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+  }
+
+  .header-buttons{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+  }
+
+  .login-card,
+  .register-card{
+
+    width:95%;
+
+    max-width:400px;
+
+    padding:25px;
+
+  }
+
+  .public-survey{
+
+    width:95%;
+
+    padding:20px;
+  }
+
+  .builder-card{
+
+    width:100%;
+
+    padding:20px;
+  }
+
+  .question-buttons,
+
+  .question-actions,
+
+  .option-row{
+
+    flex-direction:column;
+  }
+
+  .responses-header{
+
+    flex-direction:column;
+
+    gap:15px;
+  }
+
 }

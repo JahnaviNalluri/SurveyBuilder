@@ -266,3 +266,70 @@ gap:20px;
 }
 
 }
+@media (max-width:768px){
+
+  .dashboard{
+
+    padding:20px;
+  }
+
+  .dashboard-header{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+  }
+
+  .header-buttons{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+  }
+
+  .login-card,
+  .register-card{
+
+    width:95%;
+
+    max-width:400px;
+
+    padding:25px;
+
+  }
+
+  .public-survey{
+
+    width:95%;
+
+    padding:20px;
+  }
+
+  .builder-card{
+
+    width:100%;
+
+    padding:20px;
+  }
+
+  .question-buttons,
+
+  .question-actions,
+
+  .option-row{
+
+    flex-direction:column;
+  }
+
+  .responses-header{
+
+    flex-direction:column;
+
+    gap:15px;
+  }
+
+}

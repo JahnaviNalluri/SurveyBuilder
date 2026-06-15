@@ -336,33 +336,43 @@ setSaved(true);
 
     
 
-     <p style={{ color:"black",marginLeft:"-45%"}}>Theme Color:</p>
-      
+     <div className="branding-section">
 
-      <input
-        type="color"
-        value={themeColor}
-        onChange={(e) =>
-          setThemeColor(
-            e.target.value
-          )
-        }
-      />
+  <p>
+    Theme Color
+  </p>
 
-      <br />
-      <br />
+  <input
+    type="color"
 
-      <input
-        type="text"
-        placeholder="Logo URL"
-        value={logoUrl}
-        style={{background:"white",color:"black",marginLeft:"-13%"}}
-        onChange={(e) =>
-          setLogoUrl(
-            e.target.value
-          )
-        }
-      />
+    value={themeColor}
+
+    onChange={(e)=>
+      setThemeColor(
+        e.target.value
+      )
+    }
+  />
+
+  <input
+
+    className="logo-input"
+
+    type="text"
+
+    placeholder="Logo URL"
+
+    value={logoUrl}
+
+    onChange={(e)=>
+      setLogoUrl(
+        e.target.value
+      )
+    }
+
+  />
+
+</div>
 
       <hr />
 

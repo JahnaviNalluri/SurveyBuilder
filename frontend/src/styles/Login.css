@@ -36,18 +36,26 @@ body,
 }
 
 /* Login Card */
-.login-card {
-  width: 100%;
-  max-width: 490px;
-  padding: 40px;
-  border-radius: 20px;
-margin-left: -30%;
-  background: transparent;
-  backdrop-filter: blur(25px);
+.login-card{
 
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width:100%;
 
-  text-align: center;
+  max-width:490px;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  margin:0;
+
+  background:transparent;
+
+  backdrop-filter:blur(25px);
+
+  box-shadow:
+  0 8px 32px rgba(0,0,0,0.3);
+
+  text-align:center;
 }
 
 /* Heading */
@@ -164,4 +172,71 @@ margin-left: -30%;
   height:20px;
 
   cursor:pointer;
+}
+@media (max-width:768px){
+
+  .dashboard{
+
+    padding:20px;
+  }
+
+  .dashboard-header{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+  }
+
+  .header-buttons{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+  }
+
+  .login-card,
+  .register-card{
+
+    width:95%;
+
+    max-width:400px;
+
+    padding:25px;
+
+  }
+
+  .public-survey{
+
+    width:95%;
+
+    padding:20px;
+  }
+
+  .builder-card{
+
+    width:100%;
+
+    padding:20px;
+  }
+
+  .question-buttons,
+
+  .question-actions,
+
+  .option-row{
+
+    flex-direction:column;
+  }
+
+  .responses-header{
+
+    flex-direction:column;
+
+    gap:15px;
+  }
+
 }
